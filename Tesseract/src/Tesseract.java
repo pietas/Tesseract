@@ -15,21 +15,6 @@ public class Tesseract {
 	
 	public static void main(String args[])
 	{
-		GLProfile glProfile = GLProfile.getDefault();
-		GLCapabilities caps = new GLCapabilities(glProfile);
-		GLCanvas canvas = new GLCanvas(caps);
 		
-		Frame frame = new Frame();
-		frame.add(canvas);
-		frame.setSize(500, 500);
-		
-		frame.setBackground(Color.BLUE);
-		frame.setVisible(true);
-		
-		frame.addWindowListener(new WindowAdapter(){
-			public void windowClosing(WindowEvent e){
-				System.exit(0);
-			}
-		});
 	}
 }
